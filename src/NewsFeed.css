@@ -1,0 +1,24 @@
+.News-feed {
+    background-color: "aliceblue";
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6px;
+}
+.News-story {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.News-story .Story-header {
+    margin-top: 0;
+    text-decoration: underline;
+}
+
+.News-story .Story-content {
+    text-align: left;
+    margin-top: 0;
+}
