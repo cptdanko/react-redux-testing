@@ -5,7 +5,7 @@ const initialState = {
     stories: NewsArchive
 };
 
-const storiesReducer = (state = initialState, action) => {
+export const storiesReducer = (state = initialState, action) => {
     switch(action.type) {
         case 'ADD_STORY':
             return {...state, stories: [...state.stories, action.payload]};
@@ -16,7 +16,6 @@ const storiesReducer = (state = initialState, action) => {
             return state;
     }
 }
-
 const store = createStore(storiesReducer);
 
 export default store;
